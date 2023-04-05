@@ -24,7 +24,7 @@ export default function SettingAction(props: {
     >
       <Show when={shown()}>
         <div class="<sm:max-h-10em max-h-14em overflow-y-auto">
-          <SettingItem icon="i-ri:lock-password-line" label="网站密码">
+          {/* <SettingItem icon="i-ri:lock-password-line" label="网站密码">
             <input
               type="password"
               value={props.setting().password}
@@ -36,7 +36,7 @@ export default function SettingAction(props: {
                 })
               }}
             />
-          </SettingItem>
+            </SettingItem> */}
           <SettingItem icon="i-carbon:api" label="OpenAI Key">
             <input
               type="password"

@@ -79,13 +79,14 @@ export const post: APIRoute = async context => {
       messages,
       key = localKey,
       temperature = 0.6,
-      password,
+      password = 'ourongxing',
       model = defaultModel
     } = body
 
-    if (pwd && pwd !== password) {
-      throw new Error("密码错误，请联系网站管理员。")
-    }
+    // 去除密码验证
+    // if (pwd && pwd !== password) {
+    //   throw new Error("密码错误，请联系网站管理员。")
+    // }
 
     if (!messages?.length) {
       throw new Error("没有输入任何文字。")
