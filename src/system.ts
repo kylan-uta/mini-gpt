@@ -1,7 +1,7 @@
 import type { Model } from "./types"
 
 export const defaultSetting = {
-  continuousDialogue: true,
+  continuousDialogue: false,
   archiveSession: false,
   openaiAPIKey: "",
   openaiAPITemperature: 60,
@@ -10,7 +10,8 @@ export const defaultSetting = {
   model: "gpt-3.5-turbo" as Model
 }
 
-export const defaultMessage = `欢迎使用公众号「AI语言助手」，获取 key 后使用`
+export const defaultMessage = `欢迎使用公众号「AI语言助手」!
+<img src="https://7072-prod-3gczf0ik897a7508-1309259652.tcb.qcloud.la/chatkf.png" alt="图片描述" width="150" height="150">`
 
 export type Setting = typeof defaultSetting
 

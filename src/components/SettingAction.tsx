@@ -142,13 +142,14 @@ export default function SettingAction(props: {
         <hr class="my-1 bg-slate-5 bg-op-15 border-none h-1px"></hr>
       </Show>
       <div class="flex items-center justify-between">
-        <ActionItem
+        {/* <ActionItem
           onClick={() => {
             setShown(!shown())
           }}
           icon="i-carbon:settings"
           label="设置"
-        />
+        /> */}
+        <div></div>
         <div class="flex">
           <ActionItem
             onClick={async () => {

@@ -7,7 +7,8 @@ import preWrapperPlugin from "./preWrapper"
 
 const md = MarkdownIt({
   linkify: true,
-  breaks: true
+  breaks: true,
+  html: true
 })
   .use(mdKatex)
   .use(mdHighlight, {
